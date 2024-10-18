@@ -71,10 +71,9 @@ compileQuerydsl {
 /* QueryDsl End */
 
 /* RestDocs Start */
-tasks.named('test') {
-	useJUnitPlatform()
-
-	outputs.dir snippetsDir
+test {
+    useJUnitPlatform()
+    outputs.dir snippetsDir
 }
 
 ext {
